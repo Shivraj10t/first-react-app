@@ -17,7 +17,7 @@ import FormDyn from './components/FormDyn';
 root.render(    
    <>
   <NavBAR />   
-  <RImage/>
+  {/* <RImage/> */}
   {/* <InputForm/>
   <TableShow/> */}
  {/* <FunctionComponentsEvent/>
