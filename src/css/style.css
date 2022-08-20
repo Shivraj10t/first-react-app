@@ -1,0 +1,15 @@
+h1{
+    justify-content: center;
+    display: flex;
+}
+.demo{
+    color: green;
+}
+.demo1{
+    color: red;
+}
+.font-18{
+    font: bolder;
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
