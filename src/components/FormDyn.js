@@ -20,18 +20,33 @@ import React from "react";
             address:event.target.value
         })
     }
-    handleSubmit=(event)=>{
-        this.setState({
-        nam:this.state.username,
-        add:this.state.address});
-         alert(`${this.state.username} | ${this.state.address}`)
-         event.preventDefault();
-    }
-    render(){
+    logout=()=>{
         
+        localStorage.removeItem('Name')
+    }
+    handleSubmit=(event)=>{
+      
+      if (this.state.username=="Shivraj" && this.state.address=="123") {
+            localStorage.setItem('Name',this.state.username)
+            alert("Login SucessFull")
+        } else {
+            alert("You Are Not Authorized")
+            event.preventDefault();
+        }
+        // this.setState({
+        // nam:this.state.username,
+        // add:this.state.address});
+        //  alert(`${this.state.username} | ${this.state.address}`)
+       
+    }
+     
+      
+    render(){
+        // console.table(localStorage.getItem('Name'))
         return<>
          
             Dynamic Form With Event Handle
+            <p>name:{localStorage.getItem('Name') } </p>
        <hr/><br/> 
         <form  onSubmit={this.handleSubmit}>
             <div>
@@ -45,7 +60,7 @@ import React from "react";
         </form >
         {this.state.nam }
         {this.state.add }
-        
+        <button onClick={this.logout}>logout</button>
         </>
     }
  }
