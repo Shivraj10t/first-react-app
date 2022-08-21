@@ -23,7 +23,6 @@ root.render(
  {/* <FunctionComponentsEvent/>
  <EventHandle number={num}/> */}
  {/* <ListData18/> */}
- <StyleSheet isValid={true}/>
- <FormDyn/>
+
  </>
 );

@@ -22,6 +22,7 @@ return <>
         </nav>
       
     </header>
+  
     <Routes>
                  <Route exact path='/' element={< Home />}></Route>
                  <Route exact path='/about' element={< About />}></Route>
